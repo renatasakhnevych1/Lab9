@@ -19,7 +19,14 @@ using namespace std;
 //}
 
 //Zad3
-
+struct trojkat {
+	double a;
+	double b;
+	double c;
+};
+void Funkcja(struct trojkat trojkat_1, struct trojkat *trojkat_2) {
+	*trojkat_2 = trojkat_1;
+}
 
 
 
@@ -30,6 +37,11 @@ int main()
 	//obiekt1 = { 34,57 };
 	//cout << obiekt1.x<<", "<<obiekt1.y;
 
+	trojkat t1;
+	trojkat t2;
+	t1 = { 4.5,7.0,8.5 };
+
+	Funkcja(t1, &t2);
 	
 
 
